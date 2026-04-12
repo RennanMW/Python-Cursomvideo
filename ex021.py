@@ -1,0 +1,1 @@
+#pygame ainda nao suporta python 3.14.0
