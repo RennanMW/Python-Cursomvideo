@@ -6,9 +6,9 @@ homemVelho = ''
 mulherJovem = 0
 
 for pessoas in range(1, 5):
-    nome = str(input('Digite seu nome: '))
+    nome = str(input('Digite seu nome: ')).strip().capitalize()
     idade = int(input('Digite sua idade: '))
-    sexo = str(input('Com qual genero vc se identifica (M/F): ')).upper()
+    sexo = str(input('Qual é o seu sexo (M/F): ')).upper()
     if pessoas == 1 and sexo == 'M':
         maiorIdade = idade
         homemVelho = nome
@@ -21,6 +21,6 @@ for pessoas in range(1, 5):
     somaIdade = somaIdade + idade
     mediaIdade = somaIdade / 4
 
-print('media de idade é: {}'.format(mediaIdade))
-print('O homem mais velho do grupo se chama: {}'.format(homemVelho))
+print('Média de idade de todos os individuos é: {}'.format(mediaIdade))
+print('O homem mais velho do grupo tem {} anos e se chama: {}'.format(maiorIdade, homemVelho))
 print('A quantidade de mulheres menores de 20 anos é: {}'.format(mulherJovem))
