@@ -3,6 +3,8 @@
 0 1 1 2 3 5 8'''
 
 print('-=' * 20)
+print('Sequancia de Fibonacci')
+print('-=' * 20)
 primeirotermo = 0
 segundotermo = 1
 terceirotermo = primeirotermo + segundotermo
