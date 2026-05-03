@@ -10,21 +10,32 @@ vitorias = 0
 derrota = 0
 
 while True:
-    computador = randint(0, 10)
-    print(computador)
+    jogada = ' '
+    computador = randint(0, 10) # Faz o computador ramdomizar um numero a cada loop
     valor = int(input('Diga um número: '))
-    jogada = str(input('Par ou ímpar? [P/I] ')).upper().strip()[0]
+
+    # Esse loop faz a verificação da jogada, enquanto o valor digitado não for P ou I, ele vai pedir novamente
+    while jogada not in 'PI':
+        jogada = str(input('Par ou ímpar? [P/I] ')).upper().strip()[0]
+
+    # Soma os "Dedos" que vc e o computador jogou
     soma = valor + computador
+
+    # Verificação se as jogadas juntas foram PAR e se vc escolheu PAR
     if soma % 2 == 0 and jogada == 'P':
         print(f'Você jogou {valor} e o computador {computador}. Total de {soma} DEU PAR')
         print('Você VENCEU! \nVamos jogar novamente...')
         vitorias = vitorias + 1
         print('-=' * 15)
+
+    # Verificação se as jogadas juntas foram Ímpar e se vc escolheu Ímpar
     elif soma % 2 == 1 and jogada == 'I':
         print(f'Você jogou {valor} e o computador {computador}. Total de {soma} DEU ÍMPAR')
         print('Você VENCEU! \nVamos jogar novamente...')
         vitorias = vitorias + 1
         print('-=' * 15)
+    
+    # Caso nenhuma das opções acima seja verdadeira o else joga pra fora do laço
     else:
         derrota = 1
         print(f'Você jogou {valor} e o computador {computador}. Total de {soma}')
