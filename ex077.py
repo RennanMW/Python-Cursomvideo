@@ -9,7 +9,7 @@ palavras = (
 )
 
 for palavra in palavras:
-    print(f'Na palavra {palavra} as vogais são: ')
+    print(f'\nNa palavra {palavra} as vogais são: ', end='')
     for letra in range(0, len(palavra)):
         if palavra[letra] in 'aeiou':
             print(palavra[letra], end=' ')
