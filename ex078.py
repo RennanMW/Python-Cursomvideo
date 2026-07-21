@@ -19,6 +19,7 @@ print(f'O maior valor digitado foi {maiorValor} nas posições ', end='')
 for c in range(0, 5):
     if valores[c] == maiorValor:
         print(f'{c}...', end='')
+
 print(f'\nO menor valor digitado foi {menorValor} nas posições ', end='')
 for c in range(0, 5):
     if valores[c] == menorValor:
