@@ -15,11 +15,11 @@ for cont, valor in enumerate(valores):
             menorValor = valor
 
 print(f'Você digitou os valores {valores}')
-print(f'O maior valor digitado foi {maiorValor} nas posições ')
+print(f'O maior valor digitado foi {maiorValor} nas posições ', end='')
 for c in range(0, 5):
     if valores[c] == maiorValor:
-        print(f'{c}...')
-print(f'O menor valor digitado foi {menorValor} nas posições ')
+        print(f'{c}...', end='')
+print(f'\nO menor valor digitado foi {menorValor} nas posições ', end='')
 for c in range(0, 5):
     if valores[c] == menorValor:
-        print(f'{c}...')
+        print(f'{c}...', end='')
