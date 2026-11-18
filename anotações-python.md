@@ -26,7 +26,7 @@ Ordem de precedencia
 Comando - `import` nome da biblioteca
 Comando - `from` nome da biblioteca `import` funcionalidade
 
-# Aula 9 MAnipulando textos
+# Aula 9 Manipulando textos
 
 Cada cadeia de caracteres são divididas em índices sempre começando em 0.
 
@@ -78,3 +78,15 @@ Divisão: dividir a cadeia de caracteres.
 Junção: juntar strings separadas.
 
 `'-'.join(frase)`: Junta a frase pela "condição" dentro do apostrofo que nesse caso foi o hifen.
+
+# Aula 10 Condição (parte 1)
+
+Condição simples e composta
+
+Simples: `if (condição verdadeira):`
+                bloco de comando
+
+Composta: `if (condição verdadeira):`
+                bloco de comando
+           `else:`
+                bloco de comando
